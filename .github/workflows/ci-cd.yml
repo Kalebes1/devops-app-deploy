@@ -1,0 +1,23 @@
+name: CI DevOps App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Listar arquivos do projeto
+        run: ls -la
+
+      - name: Build da imagem Docker
+        run: docker build -f docker/Dockerfile -t devops-app .
