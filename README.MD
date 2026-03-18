@@ -1,4 +1,4 @@
-# 🚀 Projeto DevOps com Docker, Nginx e Linux
+# Projeto DevOps com Docker, Nginx e Linux
 
 ![Docker](https://img.shields.io/badge/Docker-Container-blue)
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
@@ -7,7 +7,7 @@
 
 ---
 
-## 📖 Sobre o projeto
+## Sobre o projeto
 
 Este projeto demonstra a criação e o deploy de uma aplicação web simples utilizando **Docker**, **Docker Compose** e **Nginx** em ambiente Linux.
 
@@ -20,7 +20,7 @@ O objetivo é simular um cenário real de **DevOps**, aplicando conceitos como:
 
 ---
 
-## 🧱 Arquitetura
+## Arquitetura
 
 ```
 Usuário (Navegador)
@@ -36,18 +36,18 @@ Aplicação HTML/CSS
 
 ---
 
-## 📦 Tecnologias utilizadas
+## ecnologias utilizadas
 
-* 🐧 Linux
-* 🐳 Docker
-* ⚙️ Docker Compose
-* 🌐 Nginx
-* 🧠 Bash Script
-* 🔧 Git
+* Linux
+* Docker
+* Docker Compose
+* Nginx
+* Bash Script
+* Git
 
 ---
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 devops-app-deploy/
@@ -61,9 +61,9 @@ devops-app-deploy/
 
 ---
 
-## ⚙️ Como executar o projeto
+## Como executar o projeto
 
-### 🔹 1. Clonar o repositório
+### 1. Clonar o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/devops-app-deploy.git
@@ -72,7 +72,7 @@ cd devops-app-deploy
 
 ---
 
-### 🔹 2. Subir a aplicação
+### 2. Subir a aplicação
 
 ```bash
 docker compose up -d --build
@@ -80,7 +80,7 @@ docker compose up -d --build
 
 ---
 
-### 🔹 3. Acessar no navegador
+### 3. Acessar no navegador
 
 ```
 http://localhost:8080
@@ -88,7 +88,7 @@ http://localhost:8080
 
 ---
 
-## 🧪 Health Check
+## Health Check
 
 Script responsável por validar se a aplicação está online.
 
@@ -142,12 +142,12 @@ docker compose up -d --build
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 **Kalebe Silva**
-📧 [kalebes953@gmail.com](mailto:kalebes953@gmail.com)
-📱 (61) 9 9193-8281
-🔗 https://www.linkedin.com/in/kalebe-silva-208135197/
+[kalebes953@gmail.com](mailto:kalebes953@gmail.com)
+(61) 9 9193-8281
+https://www.linkedin.com/in/kalebe-silva-208135197/
 
 ---
 
