@@ -66,7 +66,7 @@ devops-app-deploy/
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/devops-app-deploy.git
+git clone https://github.com/Kalebes1/devops-app-deploy
 cd devops-app-deploy
 ```
 
