@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Hub | Aprenda DevOps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">DevOps<span>Hub</span></div>
+
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#topicos">Tópicos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#contato" class="btn btn-outline">Começar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="tag">Estudo • Automação • Cloud • Cultura</span>
+          <h1>Aprenda DevOps de forma prática e moderna</h1>
+          <p>
+            Entenda os principais conceitos de DevOps, automação, integração contínua,
+            containers, cloud e monitoramento em uma página feita para estudo.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#topicos" class="btn btn-primary">Explorar conteúdo</a>
+            <a href="#sobre" class="btn btn-secondary">Saiba mais</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <h3>CI/CD</h3>
+              <p>Integração e entrega contínua</p>
+            </div>
+            <div class="stat-card">
+              <h3>Docker</h3>
+              <p>Containers e padronização</p>
+            </div>
+            <div class="stat-card">
+              <h3>Cloud</h3>
+              <p>Infraestrutura escalável</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="code-box">
+            <div class="code-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <pre>
+$ git push origin main
+$ docker build -t app .
+$ docker run -p 80:80 app
+$ terraform apply
+$ kubectl get pods
+$ az login
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container grid-2">
+        <div>
+          <h2>O que é DevOps?</h2>
+          <p>
+            DevOps é uma cultura que une desenvolvimento e operações para entregar
+            software com mais velocidade, qualidade e segurança.
+          </p>
+          <p>
+            O foco está na automação, colaboração entre equipes, monitoramento constante
+            e melhoria contínua dos processos.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Principais pilares</h3>
+          <ul>
+            <li>Automação de processos</li>
+            <li>Integração contínua</li>
+            <li>Entrega contínua</li>
+            <li>Infraestrutura como código</li>
+            <li>Monitoramento e observabilidade</li>
+            <li>Colaboração entre times</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="topics section" id="topicos">
+      <div class="container">
+        <div class="section-title">
+          <span>Conteúdos</span>
+          <h2>Tópicos importantes em DevOps</h2>
+          <p>Uma visão geral dos assuntos mais estudados na área.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Git e Versionamento</h3>
+            <p>
+              Controle de versões, branches, commits, merge e colaboração em equipe.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>CI/CD</h3>
+            <p>
+              Pipelines automatizados para testar, validar e publicar aplicações.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Docker</h3>
+            <p>
+              Criação de containers para empacotar aplicações com suas dependências.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Kubernetes</h3>
+            <p>
+              Orquestração de containers, escalabilidade e alta disponibilidade.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Cloud Computing</h3>
+            <p>
+              Uso de plataformas como Azure, AWS e GCP para hospedar soluções.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Infraestrutura como Código</h3>
+            <p>
+              Provisionamento automatizado com ferramentas como Terraform.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section" id="beneficios">
+      <div class="container">
+        <div class="section-title">
+          <span>Vantagens</span>
+          <h2>Por que estudar DevOps?</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-box">
+            <h3>Mais automação</h3>
+            <p>Reduz tarefas manuais e aumenta a produtividade.</p>
+          </div>
+
+          <div class="benefit-box">
+            <h3>Mais qualidade</h3>
+            <p>Testes e validações ajudam a evitar falhas em produção.</p>
+          </div>
+
+          <div class="benefit-box">
+            <h3>Mais velocidade</h3>
+            <p>Entregas contínuas tornam o desenvolvimento mais ágil.</p>
+          </div>
+
+          <div class="benefit-box">
+            <h3>Mais escalabilidade</h3>
+            <p>Ambientes em nuvem permitem crescer com facilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="container cta-box">
+        <div>
+          <h2>Comece sua jornada em DevOps hoje</h2>
+          <p>
+            Estude Git, Linux, Docker, CI/CD, Cloud e automação para construir uma base sólida.
+          </p>
+        </div>
+        <a href="#contato" class="btn btn-primary">Quero estudar DevOps</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <span class="mini-title">Contato</span>
+          <h2>Fale com a página de estudo</h2>
+          <p>
+            Esse formulário é apenas visual para fins de estudo e prática de front-end.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Seu nome" />
+          <input type="email" placeholder="Seu e-mail" />
+          <textarea rows="5" placeholder="Sua mensagem"></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h3>DevOpsHub</h3>
+        <p>Landing page criada para estudo de HTML e CSS.</p>
+      </div>
+
+      <div>
+        <p>© 2026 DevOpsHub. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
