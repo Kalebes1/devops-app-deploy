@@ -36,7 +36,7 @@ Aplicação HTML/CSS
 
 ---
 
-## ecnologias utilizadas
+## Tecnologias utilizadas
 
 * Linux
 * Docker
