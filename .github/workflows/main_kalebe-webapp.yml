@@ -1,4 +1,4 @@
-name: Build and deploy static site to Azure Web App - kalebe-webapp
+name: Build and deploy site to Azure Web App - kalebe-webapp
 
 on:
   push:
@@ -16,14 +16,14 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Verificar arquivos da pasta app
-        run: ls -la app
+      - name: Instalar dependências
+        run: npm install
 
       - name: Upload artifact para deploy
         uses: actions/upload-artifact@v4
         with:
-          name: static-site
-          path: ./app
+          name: app-site
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -36,8 +36,8 @@ jobs:
       - name: Download artifact do build
         uses: actions/download-artifact@v4
         with:
-          name: static-site
-          path: ./app
+          name: app-site
+          path: .
 
       - name: Login no Azure
         uses: azure/login@v2
@@ -47,9 +47,8 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F4A91DEB639C48EF9886B8F36C1BEB26 }}
 
       - name: Deploy para Azure Web App
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'kalebe-webapp'
           slot-name: 'Production'
-          package: ./app
+          package: .
