@@ -1,15 +1,13 @@
-name: CI DevOps App
+name: CI/CD DevOps App
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +15,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Listar arquivos do projeto
-        run: ls -la
+        run: ls -la && ls -la app
 
       - name: Build da imagem Docker
         run: docker build -f docker/Dockerfile -t devops-app .
+
+      - name: Deploy para Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: NOME_DO_SEU_APP
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ./app
