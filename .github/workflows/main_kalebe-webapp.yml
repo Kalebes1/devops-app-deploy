@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'kalebe-webapp'
           slot-name: 'Production'
-          package: .
+          package: ./app
           
